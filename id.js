@@ -1,0 +1,15 @@
+let name = prompt("Please enter your name", "Your Name");
+let gndr = prompt("What is your gender?", "M or F");
+let usrnm = prompt("What is your username?");
+let selfDesc = prompt("How do you describe yourself?", "I am cool");
+let birthYr = prompt("What year were you born?", "0000");
+let pic = prompt("What is the file source?", "File Name");
+let date = new Date().getFullYear();
+let age = date - birthYr;
+document.getElementById("fname").innerHTML = name;
+document.getElementById("gender").innerHTML = gndr;
+document.getElementById("username").innerHTML = usrnm;
+document.getElementById("desc").innerHTML = selfDesc;
+document.getElementById("year").innerHTML = birthYr;
+document.getElementById("age").innerHTML = age;
+document.getElementById("ppic").src =  pic;
